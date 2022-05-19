@@ -20,15 +20,22 @@ from selenium.webdriver.common.keys import Keys
 #     )
 # )
 
-os.environ['PATH'] += r"G:/Selenium Driver"
-driver = webdriver.Chrome()
-driver.get("https://sg.yahoo.com/?p=us")
-driver.implicitly_wait(3)
-searchBox = driver.find_element_by_id('ybar-sbq')
-searchBox.send_keys('aws')
-# searchBox.send_keys(Keys.NUMPAD1, Keys.NUMPAD4)
+# os.environ['PATH'] += r"G:/Selenium Driver"
+# driver = webdriver.Chrome()
+# driver.get("https://sg.yahoo.com/?p=us")
+# driver.implicitly_wait(3)
+# searchBox = driver.find_element_by_id('ybar-sbq')
+# searchBox.send_keys('aws')
+# # searchBox.send_keys(Keys.NUMPAD1, Keys.NUMPAD4)
 
-searchButton = driver.find_element_by_id('ybar-search')
-searchButton.click()
-# searchButton = driver.find_element_by_css_selector('button[class="btn btn-primary"]')
+# searchButton = driver.find_element_by_id('ybar-search')
 # searchButton.click()
+# # searchButton = driver.find_element_by_css_selector('button[class="btn btn-primary"]')
+# # searchButton.click()
+
+# os.environ['PATH'] += r"G:/Selenium Driver"
+# driver = webdriver.Chrome()
+# driver.get('https://youtube.com')
+# WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input[name='search_query']"))).send_keys("youtube test")
+# driver.find_element_by_css_selector('button[id="search-icon-legacy"]').click()
+
